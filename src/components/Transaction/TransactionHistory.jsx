@@ -1,33 +1,35 @@
 import Transaction from './Transaction';
+import { TaskSection } from '../TaskSection.styled';
+import { TableHead, TableHeadCell, TableRow } from './Transaction.styled';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <>
+    <TaskSection>
       <h2>Task 4</h2>
       <table className="transaction-history">
-        <thead>
+        <TableHead>
           <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
+            <TableHeadCell>Type</TableHeadCell>
+            <TableHeadCell>Amount</TableHeadCell>
+            <TableHeadCell>Currency</TableHeadCell>
           </tr>
-        </thead>
+        </TableHead>
 
         <tbody>
           {items.map(item => {
             return (
-              <tr key={item.id}>
+              <TableRow key={item.id}>
                 <Transaction
                   type={item.type}
                   amount={item.amount}
                   currency={item.currency}
                 />
-              </tr>
+              </TableRow>
             );
           })}
         </tbody>
       </table>
-    </>
+    </TaskSection>
   );
 };
 

@@ -1,4 +1,4 @@
-@import '../node_modules/modern-normalize/modern-normalize.css';
+@import-normalize;
 
 body {
   margin: 0;
@@ -12,4 +12,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid palegreen;
+  border-collapse: collapse;
 }
