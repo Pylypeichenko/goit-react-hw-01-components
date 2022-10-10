@@ -1,12 +1,17 @@
 import Transaction from './Transaction';
 import { TaskSection } from '../TaskSection.styled';
-import { TableHead, TableHeadCell, TableRow } from './Transaction.styled';
+import {
+  Table,
+  TableHead,
+  TableHeadCell,
+  TableRow,
+} from './Transaction.styled';
 
 const TransactionHistory = ({ items }) => {
   return (
     <TaskSection>
       <h2>Task 4</h2>
-      <table className="transaction-history">
+      <Table>
         <TableHead>
           <tr>
             <TableHeadCell>Type</TableHeadCell>
@@ -28,7 +33,7 @@ const TransactionHistory = ({ items }) => {
             );
           })}
         </tbody>
-      </table>
+      </Table>
     </TaskSection>
   );
 };

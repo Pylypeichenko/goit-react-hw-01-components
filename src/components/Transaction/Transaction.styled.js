@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Table = styled.table`
+  margin-top: 15px;
+`;
+
 export const TableHead = styled.thead`
   background-color: skyblue;
 `;
